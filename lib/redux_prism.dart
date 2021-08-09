@@ -26,9 +26,9 @@ class StorePrismListener extends StatelessWidget {
   final void Function(dynamic action) listen;
 
   const StorePrismListener({
-    Key key,
-    @required this.child,
-    @required this.listen,
+    Key? key,
+    required this.child,
+    required this.listen,
   }) : super(key: key);
 
   @override

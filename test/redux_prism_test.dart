@@ -6,14 +6,14 @@ import 'package:redux/redux.dart';
 import 'package:redux_prism/redux_prism.dart';
 
 class MessageAction {
-  final String message;
+  final String? message;
 
   MessageAction({this.message});
 }
 
 void main() {
   dynamic store;
-  MessageAction action;
+  MessageAction? action;
   next(action) => action;
 
   setUp(() {
